@@ -20,12 +20,11 @@ function Login() {
                         <h3>
                             Ready to watch? Enter your email to
                             create or restart your
-                            membership.
-                        </h3>
+                            membership.</h3>
                         <div className='login_input'>
                             <form>
                                 <input type="email" placeholder="Email Adress"></input>
-                                <button onClick={() => { setLogin(true) }}>Get Started</button>
+                                <button className='login_buttonInput' onClick={() => { setLogin(true) }}>Get Started</button>
                             </form>
                         </div>
                     </>
