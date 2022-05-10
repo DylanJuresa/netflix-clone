@@ -6,10 +6,10 @@ function Login() {
     const [isLogin, setLogin] = useState(false)
     return (
         <div className='login'>
-            <div className='login_background'>
-                <img className='login_logo' src='https://1000marcas.net/wp-content/uploads/2020/01/Logo-Netflix.png' />
+            <div className='login_nav'>
+                <img onClick={()=>setLogin(false)} className='login_logo' src='https://1000marcas.net/wp-content/uploads/2020/01/Logo-Netflix.png' />
                 <button className='login_button'>Sign In</button>
-                <div className='login_gradient' />
+         
             </div>
             <div className='login_body'>
                 {isLogin ? <SignUp /> :
@@ -22,10 +22,10 @@ function Login() {
                             create or restart your
                             membership.</h3>
                         <div className='login_input'>
-                            <form>
-                                <input type="email" placeholder="Email Adress"></input>
-                                <button className='login_buttonInput' onClick={() => { setLogin(true) }}>Get Started</button>
-                            </form>
+
+                            <input type="email" placeholder="Email Adress"></input>
+                            <button className='login_buttonInput' onClick={() => { setLogin(true) }}>Get Started</button>
+
                         </div>
                     </>
                 }

@@ -9,7 +9,6 @@ import Row from './Row'
 function HomeScreen() {
     return (
         <div className='Homescreen'>
-            <Nav />
             <Banner />
             <Row title="Netflix Originals" fetchUrl={axios.requests.fetchNetflix0riginals} />
             <Row title="Trending" fetchUrl={axios.requests.fetchTrending} />

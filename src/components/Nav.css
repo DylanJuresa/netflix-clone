@@ -5,24 +5,22 @@
     width: 100%;
     z-index: 1;
 }
-.nav_backgroundColor{
+
+.nav_backgroundColor {
     background-color: black;
 }
 
 .nav_container {
     display: flex;
     justify-content: space-between;
-    padding-left: 58px;
-    padding-right: 58px;
+    padding: 0px 60px;
     height: inherit;
-    
+
 }
 
 .nav_logo {
     cursor: pointer;
-    width: 80px;
-    height: inherit;
-    object-fit: contain;
+    font-size: 1.8rem;
 }
 
 .nav_avatar {
@@ -30,4 +28,17 @@
     width: 80px;
     height: 32px;
     object-fit: contain;
+}
+
+
+@media (max-width: 768px) {
+    .nav_container {
+        padding: 0px 20px;
+
+
+    }
+    .nav_logo{
+        font-size: 1.2rem;
+    }
+
 }
