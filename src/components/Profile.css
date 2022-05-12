@@ -57,3 +57,16 @@
     background-color: #e50914;
     cursor: pointer;
 }
+
+@media (max-width:768px){
+    
+.profile_info>h1 {
+    font-size: 40px;
+
+}
+.profile_Row>img {
+    height: 85px;
+}
+
+
+}
